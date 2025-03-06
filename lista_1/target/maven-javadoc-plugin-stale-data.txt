@@ -1,0 +1,48 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'21'
+-sourcepath
+'/home/jose/code/puc/6_periodo/grafos/lista_1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'lista_1 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'lista_1 1.0-SNAPSHOT API'
+com.grafos.lista1
+com.grafos.lista1.interfaces
+/home/jose/code/puc/6_periodo/grafos/lista_1/src/main/java = 1741302779625
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/member-search-index.js = 1741303589019
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/search.js = 1741303589107
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/copy.svg = 1741303589107
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/index-all.html = 1741303589078
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/package-search-index.js = 1741303589019
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/search.html = 1741303589078
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/help-doc.html = 1741303589088
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/stylesheet.css = 1741303589107
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/allpackages-index.html = 1741303589019
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/overview-tree.html = 1741303588989
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/tag-search-index.js = 1741303589029
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/link.svg = 1741303589107
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/allclasses-index.html = 1741303589019
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/type-search-index.js = 1741303589019
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/script.js = 1741303589107
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/search-page.js = 1741303589107
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/index.html = 1741303588989
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/module-search-index.js = 1741303589019
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/element-list = 1741303588871
+/home/jose/code/puc/6_periodo/grafos/lista_1/target/site/apidocs/overview-summary.html = 1741303589078
