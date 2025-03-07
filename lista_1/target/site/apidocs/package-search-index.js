@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.grafos.lista1"},{"l":"com.grafos.lista1.interfaces"}];updateSearchResults();
