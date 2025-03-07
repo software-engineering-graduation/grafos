@@ -1,6 +1,7 @@
 package com.grafos.lista1.services;
 
 import com.grafos.lista1.interfaces.IGrafo;
+import com.grafos.lista1.util.ConsoleColors;
 import com.grafos.lista1.util.GrafoConverter;
 
 public class GrafoService {
@@ -13,7 +14,7 @@ public class GrafoService {
     public void verificarPropriedade(IGrafo grafo, int opcao) {
         switch (opcao) {
             case 2:
-                System.out.println("É simples? " + (grafo.isSimples() ? "Sim" : "Não"));
+                System.out.println("É simples? " + (grafo.isSimples() ? ConsoleColors.GREEN + "Sim" : ConsoleColors.RED + "Não"));
                 break;
             case 3:
                 System.out.println("É completo? " + (grafo.isCompleto() ? "Sim" : "Não"));

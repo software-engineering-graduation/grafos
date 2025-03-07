@@ -9,6 +9,7 @@ import com.grafos.lista1.util.GrafoPrinter;
 
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.List;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
@@ -104,9 +105,23 @@ public class Main {
         try {
             int index = Integer.parseInt(scanner.nextLine());
             String filepath = fileService.getFilepathFromIndex(index);
-            int[][] matriz = LeitorGrafo.lerGrafo(filepath);
-            grafo = grafoService.createGrafo(implementationType, matriz);
-            System.out.println(ConsoleColors.GREEN + "\nGrafo carregado com sucesso!" + ConsoleColors.RESET);
+            List<LeitorGrafo.GrafoInfo> grafos = LeitorGrafo.lerGrafos(filepath);
+            
+            System.out.println("\nGrafos disponíveis no arquivo:");
+            for (int i = 0; i < grafos.size(); i++) {
+                System.out.println(ConsoleColors.WHITE_BOLD + (i + 1) + "." + ConsoleColors.RESET + " " + grafos.get(i).nome);
+            }
+            
+            System.out.print("\nEscolha o grafo (1-" + grafos.size() + "): ");
+            int grafoIndex = Integer.parseInt(scanner.nextLine()) - 1;
+            
+            if (grafoIndex < 0 || grafoIndex >= grafos.size()) {
+                throw new IllegalArgumentException("Índice de grafo inválido");
+            }
+            
+            LeitorGrafo.GrafoInfo grafoSelecionado = grafos.get(grafoIndex);
+            grafo = grafoService.createGrafo(implementationType, grafoSelecionado.matriz);
+            System.out.println(ConsoleColors.GREEN + "\nGrafo '" + grafoSelecionado.nome + "' carregado com sucesso!" + ConsoleColors.RESET);
             GrafoPrinter.printGrafo(grafo);
         } catch (IOException | IllegalArgumentException e) {
             System.out.println(ConsoleColors.RED + "\nErro: " + e.getMessage() + ConsoleColors.RESET);
