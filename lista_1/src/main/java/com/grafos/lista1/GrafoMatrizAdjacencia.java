@@ -14,13 +14,18 @@ public class GrafoMatrizAdjacencia implements IGrafo {
     private int[][] matrizAdjacencia;
 
     /**
-     * Construtor da classe GrafoMatrizAdjacencia que implementa um grafo usando matriz de adjacência.
+     * Construtor da classe GrafoMatrizAdjacencia que implementa um grafo usando
+     * matriz de adjacência.
      * A matriz é inicializada com zeros, onde:
-     * - matrizAdjacencia[i][j] = 0 significa que não há aresta entre os vértices i e j
-     * - matrizAdjacencia[i][j] = 1 significa que existe uma aresta entre os vértices i e j
-     * - matrizAdjacencia[i][j] > 1 indica múltiplas arestas entre i e j (multigrafo)
+     * - matrizAdjacencia[i][j] = 0 significa que não há aresta entre os vértices i
+     * e j
+     * - matrizAdjacencia[i][j] = 1 significa que existe uma aresta entre os
+     * vértices i e j
+     * - matrizAdjacencia[i][j] > 1 indica múltiplas arestas entre i e j
+     * (multigrafo)
      * 
-     * Exemplo para um grafo com 3 vértices onde existe uma aresta entre v0->v1 e v1->v2:
+     * Exemplo para um grafo com 3 vértices onde existe uma aresta entre v0->v1 e
+     * v1->v2:
      * [0 1 0]
      * [0 0 1]
      * [0 0 0]
@@ -34,8 +39,10 @@ public class GrafoMatrizAdjacencia implements IGrafo {
     /**
      * Construtor que inicializa um grafo a partir de uma matriz de adjacência.
      * 
-     * @param matrizAdjacencia matriz de inteiros que representa as conexões entre os vértices do grafo,
-     *                         onde o elemento [i][j] indica se existe uma aresta do vértice i para o vértice j
+     * @param matrizAdjacencia matriz de inteiros que representa as conexões entre
+     *                         os vértices do grafo,
+     *                         onde o elemento [i][j] indica se existe uma aresta do
+     *                         vértice i para o vértice j
      */
     public GrafoMatrizAdjacencia(int[][] matrizAdjacencia) {
         this.matrizAdjacencia = matrizAdjacencia;
@@ -106,7 +113,8 @@ public class GrafoMatrizAdjacencia implements IGrafo {
     @Override
     /**
      * Verifica se o grafo é simples.
-     * Um grafo é simples se não possui laços (arestas que conectam um vértice a ele mesmo)
+     * Um grafo é simples se não possui laços (arestas que conectam um vértice a ele
+     * mesmo)
      * 
      * Um grafo também pode ser identificado como não simples se possuir
      * arestas múltiplas entre os mesmos vértices (arestas paralelas), entretanto
@@ -116,7 +124,7 @@ public class GrafoMatrizAdjacencia implements IGrafo {
      */
     public boolean isSimples() {
         System.out.println("Verificando se o grafo é simples...");
-        
+
         for (int i = 0; i < matrizAdjacencia.length; i++) {
             // Verifica laços
             if (matrizAdjacencia[i][i] != 0) {
@@ -218,5 +226,5 @@ public class GrafoMatrizAdjacencia implements IGrafo {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'hasCiclo'");
     }
-    
+
 }

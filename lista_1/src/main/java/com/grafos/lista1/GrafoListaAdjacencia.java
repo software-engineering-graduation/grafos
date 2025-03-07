@@ -69,7 +69,8 @@ public class GrafoListaAdjacencia implements IGrafo {
 
     @Override
     public boolean isSimples() {
-        if(arestas.stream().anyMatch(a -> a.getOrigem().equals(a.getDestino()))) {
+        if(arestas.stream()
+                .anyMatch(a -> a.getOrigem().equals(a.getDestino()))) {
             return false;
         }
         return true;
