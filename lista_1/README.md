@@ -2,6 +2,14 @@
 
 Este repositório contém um estudo sobre grafos em Java, com foco na implementação de conceitos fundamentais.
 
+## Navegação
+
+* [README.md](README.md) - Esta página
+* [Conceitos de Grafos](docs/conceitos.md) - Conceitos fundamentais
+* [Detalhes da Implementação](docs/implementacao.md) - Documentação técnica
+* [Menu do Sistema](docs/menu.md) - Como usar o menu interativo
+* [Arquivos de Entrada](docs/input-files.md) - Como estruturar arquivos de entrada
+
 ## Objetivo
 
 O objetivo deste projeto é fornecer uma base sólida para o aprendizado e a experimentação com grafos em Java.
@@ -15,6 +23,8 @@ O objetivo deste projeto é fornecer uma base sólida para o aprendizado e a exp
 
 *   [Conceitos de Grafos](docs/conceitos.md)
 *   [Detalhes da Implementação](docs/implementacao.md)
+*   [Menu do Sistema](docs/menu.md)
+*   [Arquivos de Entrada](docs/input-files.md)
 
 ## Como Usar
 

@@ -1,6 +1,15 @@
 # Detalhes da Implementação
 
+[← Voltar para README](../README.md)
+
 Este documento descreve os detalhes da implementação das interfaces `Grafo`, `Vertice` e `Aresta`.
+
+## Sumário
+
+- [Interfaces](#interfaces)
+- [Implementações](#implementações)
+- [Menu do Sistema](menu.md)
+- [Formato de Entrada](input-files.md)
 
 ## Interfaces
 
