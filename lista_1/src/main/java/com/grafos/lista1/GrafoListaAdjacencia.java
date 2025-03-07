@@ -1,5 +1,6 @@
 package com.grafos.lista1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.grafos.lista1.interfaces.Aresta;
@@ -7,6 +8,24 @@ import com.grafos.lista1.interfaces.IGrafo;
 import com.grafos.lista1.interfaces.Vertice;
 
 public class GrafoListaAdjacencia implements IGrafo {
+
+    List<Aresta> arestas;
+    private List<Vertice> vertices;
+
+    public GrafoListaAdjacencia(List<Aresta> arestas) {
+        this.arestas = new ArrayList<>(arestas);
+        this.vertices = new ArrayList<>();
+        
+        // Extract vertices from edges
+        for (Aresta aresta : arestas) {
+            if (!vertices.contains(aresta.getOrigem())) {
+                vertices.add(aresta.getOrigem());
+            }
+            if (!vertices.contains(aresta.getDestino())) {
+                vertices.add(aresta.getDestino());
+            }
+        }
+    }
 
     @Override
     public void adicionarVertice(Vertice vertice) {
@@ -34,14 +53,12 @@ public class GrafoListaAdjacencia implements IGrafo {
 
     @Override
     public List<Vertice> getVertices() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getVertices'");
+        return new ArrayList<>(vertices);
     }
 
     @Override
     public List<Aresta> getArestas() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getArestas'");
+        return new ArrayList<>(arestas);
     }
 
     @Override
@@ -52,8 +69,10 @@ public class GrafoListaAdjacencia implements IGrafo {
 
     @Override
     public boolean isSimples() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isSimples'");
+        if(arestas.stream().anyMatch(a -> a.getOrigem().equals(a.getDestino()))) {
+            return false;
+        }
+        return true;
     }
 
     @Override

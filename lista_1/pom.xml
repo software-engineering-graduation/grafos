@@ -13,6 +13,19 @@
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>1.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.7</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!-- Plugin para gerar o Javadoc -->
